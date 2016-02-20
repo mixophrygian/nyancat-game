@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="./animated-nyan/bundle.js"></script>
+  <script src="./animated-nyan/index.js"></script>
+  <script>
+    var canvas, stage, exportRoot;
+
+    function init() {
+      canvas = document.getElementById("canvas");
+      canvas.width = canvas.parentNode.clientWidth+1400;
+      canvas.height = canvas.parentNode.clientHeight +600;
+      exportRoot = new lib.index();
+
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+
+      createjs.Ticker.setFPS(lib.properties.fps);
+      createjs.Ticker.addEventListener("tick", stage);
+
+    }
+  </script>
+</head>
+<body onload="init();">
+<div class="text-container">
+  <div class="text" id="text1">
+    <h1>They told me I could be anything</h1>
+  </div>
+  <div class="text" id="text2">
+    <h1>So I became a poptart and flew <br>across the galaxy with <img id="rainbowWord" src="images/rainbowsWord.png"/></h1>
+  </div>
+</div>
+<img class="comet comet1" src="images/comet.png"/>
+<img class="comet comet2" src="images/comet.png"/>
+<img class="comet comet3" src="images/comet.png"/>
+<img class="comet comet4" src="images/comet.png"/>
+<img class="comet comet5" src="images/comet.png"/>
+
+<div class="audio">
+  <audio controls loop>
+    <source src="nyan_cat_song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+<div class="nyan-cat">
+  <canvas id="canvas" style="background: transparent"></canvas>
+</div>
+<div class="instructions" id="press_space">
+  <h1>Press [space] for hyper speed</h1>
+</div>
+<img class="pizza" src="images/pizza.png"/>
+
+<div class="background-container">
+  <div class="background" id="background1"></div>
+  <div class="background" id="background2"></div>
+  <div class="background" id="background3"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/main.build.js"></script>
+</body>
+</html>
+
