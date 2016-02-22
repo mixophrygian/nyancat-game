@@ -1,5 +1,5 @@
 
-/* line 3 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/index.styl */
+/* line 8 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/index.styl */
 
 /* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/gulp-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -89,29 +89,56 @@
 
 /* line 78 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/reset.styl */
 
-/* line 5 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/index.styl */
+/* line 78 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
 
-/* line 5 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/index.styl */
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  min-width: 700px;
+  z-index: 10;
+  opacity: 1;
+}
 
-/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/aliases.styl */
+/* line 9 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container .text {
+  color: #fff;
+}
 
-/* line 12 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/aliases.styl */
+/* line 12 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container #text2 {
+  position: absolute;
+  top: 0;
+}
 
-/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/ellipsis.styl */
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container #rainbowWord {
+  position: relative;
+  float: right;
+  top: -52px;
+  right: 45px;
+  width: 245px;
+  padding: 0;
+}
 
-/* line 9 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/ellipsis.styl */
+/* line 24 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.instructions {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  z-index: 300;
+  color: #fff;
+}
 
-/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/hide-text.styl */
+/* line 33 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.instructions #press_space {
+  display: inline;
+}
 
-/* line 8 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/hide-text.styl */
-
-/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/replace-text.styl */
-
-/* line 9 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/replace-text.styl */
-
-/* line 541 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/shadow-stroke.styl */
-
-/* line 2 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/text/shadow-stroke.styl */
+/* line 34 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
 
 /* line 541 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/nib/lib/nib/vendor.styl */
 
@@ -556,48 +583,16 @@ th {
 
 /* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
 
-/* line 3 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 2 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
 html,
 body {
   height: 100%;
+  min-width: 700px;
   overflow: hidden;
   background-color: #000;
 }
 
 /* line 8 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.text-container {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  z-index: 10;
-}
-
-/* line 15 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.text-container .text {
-  color: #fff;
-}
-
-/* line 18 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.text-container #text2 {
-  position: absolute;
-  top: 0;
-}
-
-/* line 22 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.text-container #rainbowWord {
-  position: relative;
-  float: right;
-  clear: none;
-  top: -110px;
-  right: -90px;
-  width: 300px;
-  padding: 0;
-}
-
-/* line 31 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
 .audio {
   position: absolute;
   display: none;
@@ -607,7 +602,231 @@ body {
   z-index: 300;
 }
 
-/* line 39 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+#score {
+  position: absolute;
+  display: none;
+  left: 20%;
+  bottom: 9%;
+  width: 80px;
+  height: 50px;
+  background-color: #000;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 300;
+}
+
+/* line 29 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+#points {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* line 33 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+
+/* line 33 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/nyan.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/nyan.styl */
+.nyan-cat {
+  position: absolute;
+  display: none;
+  top: 40%;
+  left: 10%;
+  width: 200px;
+  height: 100px;
+  z-index: 20;
+  overflow: visible;
+}
+
+/* line 12 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/nyan.styl */
+#canvas {
+  position: absolute;
+  display: inline-block;
+  width: 270px;
+  height: 119px;
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/nyan.styl */
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet {
+  position: relative;
+  z-index: 20;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+/* line 6 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet1 {
+  display: none;
+  right: -1700px;
+  top: 500px;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+/* line 12 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet2 {
+  display: none;
+  top: 120px;
+  right: -800px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+/* line 18 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet3 {
+  display: none;
+}
+
+/* line 21 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet4 {
+  display: none;
+}
+
+/* line 24 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+.comet5 {
+  display: none;
+}
+
+/* line 25 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/comets.styl */
+
+/* line 25 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+.pizza {
+  display: none;
+  position: absolute;
+  height: 55px;
+  z-index: 20;
+  -webkit-transform: skewY(-12deg) skewX(40deg);
+  -moz-transform: skewY(-12deg) skewX(40deg);
+  -o-transform: skewY(-12deg) skewX(40deg);
+  -ms-transform: skewY(-12deg) skewX(40deg);
+  transform: skewY(-12deg) skewX(40deg);
+}
+
+/* line 8 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+#pizza1 {
+  top: 30%;
+  right: -100px;
+  -webkit-animation: random 2s ease-in alternate infinite;
+  -moz-animation: random 2s ease-in alternate infinite;
+  -o-animation: random 2s ease-in alternate infinite;
+  -ms-animation: random 2s ease-in alternate infinite;
+  animation: random 2s ease-in alternate infinite;
+}
+
+/* line 13 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+#pizza2 {
+  display: 'inline';
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+@-moz-keyframes random {
+
+/* line 17 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  0% {
+    top: 5%;
+  }
+
+/* line 19 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  100% {
+    top: 95%;
+  }
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+@-webkit-keyframes random {
+
+/* line 17 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  0% {
+    top: 5%;
+  }
+
+/* line 19 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  100% {
+    top: 95%;
+  }
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+@-o-keyframes random {
+
+/* line 17 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  0% {
+    top: 5%;
+  }
+
+/* line 19 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  100% {
+    top: 95%;
+  }
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+@keyframes random {
+
+/* line 17 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  0% {
+    top: 5%;
+  }
+
+/* line 19 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+  100% {
+    top: 95%;
+  }
+}
+
+/* line 34 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/pizza.styl */
+
+/* line 78 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  min-width: 700px;
+  z-index: 10;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+/* line 9 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container .text {
+  color: #fff;
+}
+
+/* line 12 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container #text2 {
+  position: absolute;
+  top: 0;
+}
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+.text-container #rainbowWord {
+  position: relative;
+  float: right;
+  top: -52px;
+  right: 45px;
+  width: 245px;
+  padding: 0;
+}
+
+/* line 24 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
 .instructions {
   display: none;
   opacity: 0;
@@ -620,12 +839,16 @@ body {
   color: #fff;
 }
 
-/* line 48 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 33 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
 .instructions #press_space {
   display: inline;
 }
 
-/* line 51 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 20 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/text.styl */
+
+/* line 20 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
 .background-container {
   position: absolute;
   width: 1976px;
@@ -639,7 +862,7 @@ body {
   overflow: hidden;
 }
 
-/* line 62 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 11 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
 .background-container .background {
   position: absolute;
   float: left;
@@ -650,7 +873,7 @@ body {
   font-size: 100px;
 }
 
-/* line 72 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 20 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
 .background-container #background1 {
   left: 0;
   top: 0;
@@ -663,7 +886,7 @@ body {
   z-index: 11;
 }
 
-/* line 82 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 29 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
 .background-container #background2 {
   left: 0;
   top: -100px;
@@ -676,7 +899,7 @@ body {
   background-repeat: repeat;
 }
 
-/* line 92 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
+/* line 38 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
 .background-container #background3 {
   left: 0;
   top: -200px;
@@ -684,84 +907,4 @@ body {
   z-index: 9;
   background: url("../images/large-star-scape.jpg");
   background-repeat: repeat;
-}
-
-/* line 101 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.nyan-cat {
-  position: absolute;
-  display: none;
-  top: 40%;
-  left: 10%;
-  width: 200px;
-  height: 100px;
-  z-index: 20;
-  overflow: visible;
-}
-
-/* line 112 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-#canvas {
-  position: absolute;
-  display: inline-block;
-  width: 350px;
-  height: 155px;
-}
-
-/* line 118 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.pizza {
-  display: none;
-  position: absolute;
-  height: 170px;
-  top: 20%;
-  right: 10%;
-  -webkit-transform: skewY(-12deg) skewX(40deg);
-  -moz-transform: skewY(-12deg) skewX(40deg);
-  -o-transform: skewY(-12deg) skewX(40deg);
-  -ms-transform: skewY(-12deg) skewX(40deg);
-  transform: skewY(-12deg) skewX(40deg);
-}
-
-/* line 126 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet {
-  position: relative;
-  z-index: 20;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-}
-
-/* line 131 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet1 {
-  display: none;
-  right: -1700px;
-  top: 500px;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-}
-
-/* line 137 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet2 {
-  display: none;
-  top: 120px;
-  right: -800px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-
-/* line 143 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet3 {
-  display: none;
-}
-
-/* line 146 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet4 {
-  display: none;
-}
-
-/* line 149 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/base.styl */
-.comet5 {
-  display: none;
 }
