@@ -1,5 +1,5 @@
 
-/* line 8 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/index.styl */
+/* line 9 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/index.styl */
 
 /* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/node_modules/gulp-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -907,4 +907,88 @@ body {
   z-index: 9;
   background: url("../images/large-star-scape.jpg");
   background-repeat: repeat;
+}
+
+/* line 44 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/space.styl */
+
+/* line 44 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+
+/* line 1 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+.skull {
+  display: none;
+  position: absolute;
+  height: 65px;
+  z-index: 20;
+}
+
+/* line 7 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+#skull1 {
+  top: 40%;
+  right: -100px;
+  -webkit-animation: random 8s ease-in alternate infinite;
+  -moz-animation: random 8s ease-in alternate infinite;
+  -o-animation: random 8s ease-in alternate infinite;
+  -ms-animation: random 8s ease-in alternate infinite;
+  animation: random 8s ease-in alternate infinite;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+/* line 13 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+@-moz-keyframes random {
+
+/* line 14 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  0% {
+    top: 93%;
+  }
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  100% {
+    top: 5%;
+  }
+}
+
+/* line 13 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+@-webkit-keyframes random {
+
+/* line 14 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  0% {
+    top: 93%;
+  }
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  100% {
+    top: 5%;
+  }
+}
+
+/* line 13 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+@-o-keyframes random {
+
+/* line 14 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  0% {
+    top: 93%;
+  }
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  100% {
+    top: 5%;
+  }
+}
+
+/* line 13 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+@keyframes random {
+
+/* line 14 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  0% {
+    top: 93%;
+  }
+
+/* line 16 : /Users/eweigert/Desktop/HOOK/greensock-playground/styles/skull.styl */
+  100% {
+    top: 5%;
+  }
 }
